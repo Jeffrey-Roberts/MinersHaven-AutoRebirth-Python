@@ -1,2 +1,3 @@
-"# MinersHaven-AutoRebirth-Python" 
-"# MinersHaven-AutoRebirth-Python" 
+Miners Haven Auto-Rebirth Script using Python.
+
+Images may need to be reuploaded depending on system/game resolution.
