@@ -23,7 +23,7 @@ def rebirth():
         # Clicks settings button
         while not settings_found:
             time.sleep(0.15)
-            img_position = pyautogui.locateCenterOnScreen('settings.png', grayscale=False, confidence=0.9)
+            img_position = pyautogui.locateCenterOnScreen('images/settings.png', grayscale=False, confidence=0.9)
             if img_position:
                 print('settings found!')
                 pyautogui.doubleClick(img_position)
@@ -34,7 +34,7 @@ def rebirth():
 
         # Clicks layout button
         time.sleep(0.15)
-        img_position = pyautogui.locateCenterOnScreen('layout.png', grayscale=False, confidence=0.8)
+        img_position = pyautogui.locateCenterOnScreen('images/layout.png', grayscale=False, confidence=0.8)
         if img_position:
             print('layout found!')
             pyautogui.doubleClick(img_position)
@@ -44,7 +44,7 @@ def rebirth():
 
         # Clicks load button
         time.sleep(0.15)
-        img_position = pyautogui.locateCenterOnScreen('load.png', grayscale=False)
+        img_position = pyautogui.locateCenterOnScreen('images/load.png', grayscale=False)
         if img_position:
             print('load found!')
             pyautogui.doubleClick(img_position)
@@ -54,7 +54,7 @@ def rebirth():
 
         # Clicks yes button
         time.sleep(0.2)
-        img_position = pyautogui.locateCenterOnScreen('yes.png', grayscale=False)
+        img_position = pyautogui.locateCenterOnScreen('images/yes.png', grayscale=False)
         if img_position:
             print('yes found!')
             pyautogui.doubleClick(img_position)
@@ -65,7 +65,7 @@ def rebirth():
         # Clicks load button second time
         while not layout_found:
             time.sleep(0.15)
-            img_position = pyautogui.locateCenterOnScreen('load.png', grayscale=False)
+            img_position = pyautogui.locateCenterOnScreen('images/load.png', grayscale=False)
             if img_position:
                 print('load found!')
                 pyautogui.doubleClick(img_position)
@@ -76,7 +76,7 @@ def rebirth():
 
         # Clicks yes button
         time.sleep(0.2)
-        img_position = pyautogui.locateCenterOnScreen('yes.png', grayscale=False)
+        img_position = pyautogui.locateCenterOnScreen('images/yes.png', grayscale=False)
         if img_position:
             print('yes found!')
             pyautogui.doubleClick(img_position)
@@ -86,7 +86,7 @@ def rebirth():
 
         # Clicks settings button
         time.sleep(0.15)
-        img_position = pyautogui.locateCenterOnScreen('settings.png', grayscale=False, confidence=0.9)
+        img_position = pyautogui.locateCenterOnScreen('images/settings.png', grayscale=False, confidence=0.9)
         if img_position:
             print('settings found!')
             pyautogui.doubleClick(img_position)
@@ -97,7 +97,7 @@ def rebirth():
         # Checks rebirth eligibility
         while not bar_found:
             time.sleep(0.15)
-            img_position = pyautogui.locateCenterOnScreen('bar.png', grayscale=False, confidence=0.9)
+            img_position = pyautogui.locateCenterOnScreen('images/bar.png', grayscale=False, confidence=0.9)
             if img_position:
                 print('bar found!')
                 pyautogui.doubleClick(img_position)
@@ -107,7 +107,7 @@ def rebirth():
                 print("bar not found!")
 
         # Clicks rebirth button
-        img_position = pyautogui.locateCenterOnScreen('rebirth.png', grayscale=False, confidence=0.9)
+        img_position = pyautogui.locateCenterOnScreen('images/rebirth.png', grayscale=False, confidence=0.9)
         if img_position:
             print('rebirth found!')
             pyautogui.doubleClick(img_position)
@@ -117,7 +117,7 @@ def rebirth():
 
         # Clicks yes button
         time.sleep(0.15)
-        img_position = pyautogui.locateCenterOnScreen('yes2.png', grayscale=False)
+        img_position = pyautogui.locateCenterOnScreen('images/yes2.png', grayscale=False)
         if img_position:
             print('yes found!')
             pyautogui.doubleClick(img_position)
