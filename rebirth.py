@@ -19,6 +19,7 @@ def rebirth():
         bar_found = False
         settings_found = False
         layout_found = False
+        yes_found = False
 
         # Clicks settings button
         while not settings_found:
@@ -53,14 +54,18 @@ def rebirth():
             print("load not found!")
 
         # Clicks yes button
-        time.sleep(0.2)
-        img_position = pyautogui.locateCenterOnScreen('images/yes.png', grayscale=False)
-        if img_position:
-            print('yes found!')
-            pyautogui.doubleClick(img_position)
-            fix()
-        else:
-            print("yes not found!")
+        while not yes_found:
+            time.sleep(0.35)
+            img_position = pyautogui.locateCenterOnScreen('images/yes.png', grayscale=False)
+            if img_position:
+                print('yes found!')
+                pyautogui.doubleClick(img_position)
+                yes_found = True
+                fix()
+            else:
+                print("yes not found!")
+
+        yes_found = False
 
         # Clicks load button second time
         while not layout_found:
@@ -75,14 +80,18 @@ def rebirth():
                 print("load not found!")
 
         # Clicks yes button
-        time.sleep(0.2)
-        img_position = pyautogui.locateCenterOnScreen('images/yes.png', grayscale=False)
-        if img_position:
-            print('yes found!')
-            pyautogui.doubleClick(img_position)
-            fix()
-        else:
-            print("yes not found!")
+        while not yes_found:
+            time.sleep(0.35)
+            img_position = pyautogui.locateCenterOnScreen('images/yes.png', grayscale=False)
+            if img_position:
+                print('yes found!')
+                pyautogui.doubleClick(img_position)
+                yes_found = True
+                fix()
+            else:
+                print("yes not found!")
+
+        yes_found = False
 
         # Clicks settings button
         time.sleep(0.15)
@@ -116,14 +125,16 @@ def rebirth():
             print("rebirth not found!")
 
         # Clicks yes button
-        time.sleep(0.15)
-        img_position = pyautogui.locateCenterOnScreen('images/yes2.png', grayscale=False)
-        if img_position:
-            print('yes found!')
-            pyautogui.doubleClick(img_position)
-            fix()
-        else:
-            print("yes not found!")
+        while not yes_found:
+            time.sleep(0.25)
+            img_position = pyautogui.locateCenterOnScreen('images/yes2.png', grayscale=False)
+            if img_position:
+                print('yes found!')
+                pyautogui.doubleClick(img_position)
+                yes_found = True
+                fix()
+            else:
+                print("yes not found!")
 
 
 rebirth()
