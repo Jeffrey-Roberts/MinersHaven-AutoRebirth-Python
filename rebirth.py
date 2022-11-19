@@ -1,8 +1,9 @@
 import pyautogui
 import time
+import threading
+from pynput.keyboard import Key, Listener
 
 TRAVEL_TIME = 1
-
 DELAY = .10
 
 
@@ -73,10 +74,50 @@ def click_rebirth():
     fix()
 
 
+paused = False
 
-time.sleep(1)
-click_settings()
-click_layouts()
-load_layout()
-click_settings()
-click_rebirth()
+
+def function():
+    global paused
+
+    time.sleep(1)
+
+    while paused:
+        time.sleep(1)
+
+    click_settings()
+    while paused:
+        time.sleep(1)
+
+    click_layouts()
+
+    while paused:
+        time.sleep(1)
+
+    load_layout()
+
+    while paused:
+        time.sleep(1)
+
+    click_settings()
+
+    while paused:
+        time.sleep(1)
+
+    click_rebirth()
+
+
+def on_release(key):
+    global paused
+
+    if key == Key.esc:
+        paused = not paused
+
+
+thread = threading.Thread(target=function)
+thread.daemon = True
+thread.start()
+
+with Listener(on_release = on_release) as listener:
+    listener.join()
+
