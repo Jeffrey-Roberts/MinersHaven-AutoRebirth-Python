@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6abb097e-7577-4e87-9ef3-f56a1d9192db" name="Default Changelist" comment="Add pause feature">
+    <list default="true" id="6abb097e-7577-4e87-9ef3-f56a1d9192db" name="Default Changelist" comment="Added kill feature">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/rebirth.py" beforeDir="false" afterPath="$PROJECT_DIR$/rebirth.py" afterDir="false" />
     </list>
@@ -87,7 +87,21 @@
       <option name="project" value="LOCAL" />
       <updated>1668873495646</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Fixed reborn button image">
+      <created>1668874515590</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1668874515591</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Added kill feature">
+      <created>1668874550267</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1668874550267</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -103,6 +117,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Add pause feature" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add pause feature" />
+    <MESSAGE value="Fixed reborn button image" />
+    <MESSAGE value="Added kill feature" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added kill feature" />
   </component>
 </project>
