@@ -86,8 +86,10 @@ def click_rebirth():
         else:
             pause() if paused else None
             print("bar not completed")
-    img_position = pyautogui.locateCenterOnScreen('images/yes2.png', grayscale=False, confidence=0.8)
-    pyautogui.doubleClick(img_position)
+
+    while pyautogui.locateCenterOnScreen('images/yes2.png', grayscale=False, confidence=0.8) is not None:
+        img_position = pyautogui.locateCenterOnScreen('images/yes2.png', grayscale=False, confidence=0.8)
+        pyautogui.doubleClick(img_position)
     fix()
 
 
