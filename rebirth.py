@@ -62,7 +62,7 @@ def load_layout():
 def click_rebirth():
     while pyautogui.locateCenterOnScreen('images/yes2.png', grayscale=False, confidence=0.8) is None:
         time.sleep(DELAY)
-        img_position = pyautogui.locateCenterOnScreen('images/rebirth.png', grayscale=False, confidence=0.7)
+        img_position = pyautogui.locateCenterOnScreen('images/rebirth.png', grayscale=False, confidence=0.6)
         if pyautogui.locateOnScreen('images/bar.png') is not None:
             print("bar completed")
             pyautogui.doubleClick(img_position)
@@ -80,38 +80,44 @@ paused = False
 def function():
     global paused
 
-    time.sleep(1)
-
-    while paused:
+    while True:
         time.sleep(1)
 
-    click_settings()
-    while paused:
-        time.sleep(1)
+        while paused:
+            time.sleep(1)
 
-    click_layouts()
+        click_settings()
+        while paused:
+            time.sleep(1)
 
-    while paused:
-        time.sleep(1)
+        click_layouts()
 
-    load_layout()
+        while paused:
+            time.sleep(1)
 
-    while paused:
-        time.sleep(1)
+        load_layout()
 
-    click_settings()
+        while paused:
+            time.sleep(1)
 
-    while paused:
-        time.sleep(1)
+        click_settings()
 
-    click_rebirth()
+        while paused:
+            time.sleep(1)
+
+        click_rebirth()
 
 
 def on_release(key):
     global paused
 
     if key == Key.esc:
+        return False
+
+    if str(key).strip('\'') == 'k':
         paused = not paused
+
+
 
 
 thread = threading.Thread(target=function)

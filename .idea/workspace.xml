@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6abb097e-7577-4e87-9ef3-f56a1d9192db" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/Miner Haven.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Miner Haven.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="6abb097e-7577-4e87-9ef3-f56a1d9192db" name="Default Changelist" comment="Add pause feature">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/rebirth.py" beforeDir="false" afterPath="$PROJECT_DIR$/rebirth.py" afterDir="false" />
     </list>
@@ -82,6 +80,14 @@
       <option name="presentableId" value="Default" />
       <updated>1607795622201</updated>
     </task>
+    <task id="LOCAL-00001" summary="Add pause feature">
+      <created>1668873495646</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1668873495646</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -94,5 +100,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Add pause feature" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add pause feature" />
   </component>
 </project>
