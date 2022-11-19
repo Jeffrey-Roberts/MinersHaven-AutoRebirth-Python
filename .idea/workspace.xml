@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6abb097e-7577-4e87-9ef3-f56a1d9192db" name="Default Changelist" comment="Changed pause locations" />
+    <list default="true" id="6abb097e-7577-4e87-9ef3-f56a1d9192db" name="Default Changelist" comment="Fixed click_rebirth()">
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -105,7 +107,14 @@
       <option name="project" value="LOCAL" />
       <updated>1668874933901</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Fixed click_rebirth()">
+      <created>1668877540770</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1668877540770</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -124,6 +133,7 @@
     <MESSAGE value="Fixed reborn button image" />
     <MESSAGE value="Added kill feature" />
     <MESSAGE value="Changed pause locations" />
-    <option name="LAST_COMMIT_MESSAGE" value="Changed pause locations" />
+    <MESSAGE value="Fixed click_rebirth()" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed click_rebirth()" />
   </component>
 </project>
